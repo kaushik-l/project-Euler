@@ -8,7 +8,7 @@ Nmax = 999
 
 # function to check if a number is factorizable as product of two three digit numbers
 def factorize3digit(num):
-    for i in range(Nmax, Nmin, -1):
+    for i in range(999, 99, -1):
         if num%i == 0 and len(str(num/i)) == 3: return True
         else: continue
     return False
